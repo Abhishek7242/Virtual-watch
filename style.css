@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+#mainbox{
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:700px;
+    overflow: hidden;
+    
+}
+
+.container{
+    position: relative;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    border-radius: 1001px;
+    flex-direction: column;
+    border: 2px solid;
+    overflow: hidden;
+}
+.container::before{
+    
+    content: "";
+    position:absolute;
+    background:url(watch1.jpg) no-repeat center center/cover;
+    width: 600px;
+    height: 600px;
+    top: 0;
+      z-index: -1;
+
+}
+.boxes{
+    display: none;
+    display: flex;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 0 2px ;
+    
+}
+.col{
+    position: relative;
+    width: 80px;
+    height: 50px;
+    background-color: rgb(194 194 194);
+    top: -35px;
+    border-radius: 16px;
+    left: 71px;
+    
+}
+#day{
+    color: white;
+    width: 40%;
+    font-size: 1.5rem;
+    top: 43px;
+    left: -57px;
+    font-weight: bolder;
+    
+}
+
+#month{
+    position: relative;
+    top: 0px;
+    left: -1px;
+    
+}
+#date{
+    position: relative;
+    top: 0px;
+    left: 5px;
+    
+}
+#year{
+    position: relative;
+    top: 0px;
+    left:5px;
+    
+}
+
+#dateContainer{
+    color: white;
+    position: relative;
+    left: -28px;
+    top: 57px;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    
+    display: flex;
+}
+#timeContainer{
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    margin: 0 5px;
+    display: flex;
+    top: -126px;
+    color: rgb(255, 255, 255);
+    left: 27px;
+    display: flex;
+}
+#watchface{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width: 245px;
+    top: -3px;
+    border-radius: 41px;
+    left: 0px;
+    position: relative;
+    overflow: hidden;
+}
+#watchface::before{
+    
+    content: "";
+    position:absolute;
+    background:url(watchb3.jpg) no-repeat center center/cover;
+    width: 245px;
+    height: 299px;
+    top: 0;
+    
+    z-index: -1;
+
+}
+#hour{
+    position: relative;
+    top: 0px;
+    left:0px;
+}
+#min{
+    position: relative;
+    top: 0px;
+    left:0px;
+}
+#sec{
+    position: relative;
+    top: 0px;
+    left:-9px;
+}
+#am-pm{
+    position: relative;
+    top: 5px;
+    left:-33px;
+    font-size: medium;
+}
